@@ -8,7 +8,7 @@ const BootstrapModal = ({ children, size, show, onHide, title, showCloseButton, 
   const header = title ? <Modal.Header closeButton={showCloseButton}><Modal.Title>{title}</Modal.Title></Modal.Header> : showCloseButton ? <Modal.Header closeButton={showCloseButton}></Modal.Header> : null;
   const footer = footerContent ? <Modal.Footer>{footerContent}</Modal.Footer> : null;
   return (
-    <Modal bsSize={size} show={show} onHide={onHide} {...rest}>
+    <Modal size={size} show={show} onHide={onHide} {...rest}>
       {header}
       <Modal.Body>
         {children}
